@@ -1,45 +1,41 @@
 # Anagram
 
-Given a word and a list of possible anagrams, select the correct sublist.
+Welcome to Anagram on Exercism's C Track.
+If you need help running the tests or submitting your code, check out `HELP.md`.
+
+## Instructions
+
+An anagram is a rearrangement of letters to form a new word.
+Given a word and a list of candidates, select the sublist of anagrams of the given word.
 
 Given `"listen"` and a list of candidates like `"enlists" "google"
 "inlets" "banana"` the program should return a list containing
 `"inlets"`.
 
-## Getting Started
-
-Make sure you have read the "Guides" section of the
-[C track](https://exercism.io/my/tracks/c) on the Exercism site. This covers
-the basic information on setting up the development environment expected
-by the exercises.
-
-
-## Passing the Tests
-
-Get the first test compiling, linking and passing by following the [three
-rules of test-driven development][3-tdd-rules].
-
-The included makefile can be used to create and run the tests using the `test`
-task.
-
-    make test
-
-Create just the functions you need to satisfy any compiler errors and get the
-test to fail. Then write just enough code to get the test to pass. Once you've
-done that, move onto the next test.
-
-[3-tdd-rules]: http://butunclebob.com/ArticleS.UncleBob.TheThreeRulesOfTdd
-
-As you progress through the tests, take the time to refactor your
-implementation for readability and expressiveness and then go on to the next
-test.
-
-Try to use standard C99 facilities in preference to writing your own
-low-level algorithms or facilities by hand.
-
 ## Source
 
-Inspired by the Extreme Startup game [https://github.com/rchatley/extreme_startup](https://github.com/rchatley/extreme_startup)
+### Created by
 
-## Submitting Incomplete Solutions
-It's possible to submit an incomplete solution so you can see how others have completed the exercise.
+- @kdar
+
+### Contributed to by
+
+- @bcc32
+- @Gamecock
+- @gea-migration
+- @h-3-0
+- @hintjens
+- @JacobMikkelsen
+- @kytrinyx
+- @lpil
+- @patricksjackson
+- @QLaille
+- @RealBarrettBrown
+- @ryanplusplus
+- @siebenschlaefer
+- @wolf99
+- @xihh87
+
+### Based on
+
+Inspired by the Extreme Startup game - https://github.com/rchatley/extreme_startup
