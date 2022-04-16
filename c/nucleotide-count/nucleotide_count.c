@@ -6,6 +6,7 @@
 #include "nucleotide_count.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 
 char *count(const char *dna_strand)
 {
@@ -40,7 +41,8 @@ char *count(const char *dna_strand)
 
     if (counter.ctr_other)
     {
-        result = "";
+        // result[0] = '\0';
+        strcpy(result, "");
     }
     else
     {
