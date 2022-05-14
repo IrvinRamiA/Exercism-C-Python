@@ -7,6 +7,14 @@ static unsigned char index = 0;
 
 void add_student(char *name_buffer, uint8_t grade)
 {
+    for (unsigned char i = 0; i < index + 1; i++)
+    {
+        if (strncmp(roster.students[i].name, name_buffer, MAX_NAME_LENGTH) == 0)
+        {
+            return;
+        }
+    }
+
     index = roster.count++;
     strcpy(roster.students[index].name, name_buffer);
     roster.students[index].grade = grade;

@@ -59,7 +59,6 @@ static void test_adding_student_adds_to_the_sorted_roster(void)
 static void
 test_student_can_only_be_added_to_the_same_grade_in_the_roster_once(void)
 {
-    TEST_IGNORE();
     roster_t input = {
         2, {(student_t){2, "Aimee"}, (student_t){2, "Aimee"}}};
 
@@ -94,7 +93,6 @@ test_adding_students_to_different_grades_adds_to_the_same_sorted_roster(void)
 static void
 test_student_cannot_be_added_to_more_than_one_grade_in_the_sorted_roster(void)
 {
-    TEST_IGNORE();
     roster_t input = {
         2, {(student_t){2, "Aimee"}, (student_t){1, "Aimee"}}};
 
@@ -114,7 +112,6 @@ test_roster_returns_an_empty_list_if_there_are_no_students_enrolled(void)
 static void
 test_student_names_with_grades_displayed_in_the_same_sorted_roster(void)
 {
-    TEST_IGNORE();
     roster_t input = {
         7, {(student_t){2, "Peter"}, (student_t){1, "Anna"}, (student_t){1, "Barb"}, (student_t){2, "Zoe"}, (student_t){2, "Alex"}, (student_t){3, "Jim"}, (student_t){1, "Charlie"}}};
 
@@ -128,6 +125,7 @@ static void
 test_grade_returns_students_in_that_grade_in_alphabetical_order(void)
 {
     TEST_IGNORE();
+    
     roster_t input = {
         3, {(student_t){5, "Franklin"}, (student_t){5, "Bradley"}, (student_t){1, "Jeff"}}};
 
