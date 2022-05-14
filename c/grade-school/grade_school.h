@@ -19,7 +19,7 @@ typedef struct
     student_t students[MAX_STUDENTS];
 } roster_t;
 
-void add_student(char name_buffer[MAX_NAME_LENGTH], uint8_t grade);
+void add_student(char *name_buffer, uint8_t grade);
 roster_t get_roster(void);
 roster_t get_grade(uint8_t desired_grade);
 void clear_roster(void);

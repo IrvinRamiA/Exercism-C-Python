@@ -124,8 +124,6 @@ test_student_names_with_grades_displayed_in_the_same_sorted_roster(void)
 static void
 test_grade_returns_students_in_that_grade_in_alphabetical_order(void)
 {
-    TEST_IGNORE();
-    
     roster_t input = {
         3, {(student_t){5, "Franklin"}, (student_t){5, "Bradley"}, (student_t){1, "Jeff"}}};
 
@@ -143,8 +141,6 @@ test_grade_returns_students_in_that_grade_in_alphabetical_order(void)
 static void
 test_grade_returns_an_empty_list_if_there_are_no_students_in_that_grade(void)
 {
-    TEST_IGNORE();
-
     uint8_t desired_grade = 1;
     roster_t actual = get_grade(desired_grade);
 
