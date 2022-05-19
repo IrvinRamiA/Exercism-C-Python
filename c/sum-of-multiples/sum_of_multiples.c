@@ -6,13 +6,22 @@ unsigned int sum(const unsigned int *factors,
 {
     unsigned int sum = 0;
 
+    if (factors[0] == 0)
+    {
+        return sum;
+    }
+
     for (unsigned int i = 1; i < limit; i++)
     {
         for (size_t j = 0; j < number_of_factors; j++)
         {
-            if (i % factors[j] == 0)
+            if (factors[j] != 0)
             {
-                sum += i;
+                if (i % factors[j] == 0)
+                {
+                    sum += i;
+                    break;
+                }
             }
         }
     }
