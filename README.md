@@ -23,3 +23,9 @@ C and Python exercises from Exercism.
 * vector magnitude
 * sqrt
 * coordinate struct
+
+### luhn
+* strings iteration
+* dynamic memory allocation
+* copy strings (strncpy)
+* conversion from ascii characters to numbers
