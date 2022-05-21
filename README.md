@@ -19,7 +19,7 @@ C and Python exercises from Exercism.
 * strings iteration
 * dynamic allocation
 
-## darts
+### darts
 * vector magnitude
 * sqrt
 * coordinate struct
