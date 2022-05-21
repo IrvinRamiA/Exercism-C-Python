@@ -29,3 +29,7 @@ C and Python exercises from Exercism.
 * dynamic memory allocation
 * copy strings (strncpy)
 * conversion from ascii characters to numbers
+
+### two-fer
+* sprintf (stdio.h)
+* ternary operator
