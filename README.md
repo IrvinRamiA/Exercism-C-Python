@@ -14,3 +14,7 @@ C and Python exercises from Exercism.
 * dynamic allocation
 * strlen
 * tolower
+
+### rna-transcription
+* strings iteration
+* dynamic allocation
