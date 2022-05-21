@@ -12,28 +12,18 @@ void tearDown(void)
 
 static int compare_map(new_map *a, new_map *b, int len)
 {
-   printf("--Compare map--\n");
-   printf("Length = %d\n", len);
    if (a == NULL)
    {
-      printf("--A NULL--\n");
       return (b == NULL) ? 0 : 1;
    }
 
    if (b == NULL)
    {
-      printf("--B NULL--\n");
       return 1;
    }
 
    while (--len >= 0)
    {
-      printf("--Compare_map--\n");
-      printf("a[%d].key = %c\n", len, a[len].key);
-      printf("b[%d].key = %c\n", len, b[len].key);
-      printf("a[%d].value = %d\n", len, a[len].value);
-      printf("b[%d].value = %d\n", len, b[len].value);
-
       if ((a[len].key != b[len].key) || (a[len].value != b[len].value))
          return 1;
    }
@@ -51,7 +41,6 @@ static void test_a_single_letter(void)
 
    new_map *output = NULL;
    int actual_length = convert(input, input_len, &output);
-   printf("Actual length = %d\n", actual_length);
 
    TEST_ASSERT_EQUAL_INT(expected_length, actual_length);
    TEST_ASSERT_EQUAL_INT(0, compare_map(expected_map, output, actual_length));

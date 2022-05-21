@@ -36,21 +36,3 @@ int convert(const legacy_map *input, const size_t input_len, new_map **output)
 
     return output_length;
 }
-
-/*
-The old system stored a list of letters per score:
-
-    1 point: "A", "E", "I", "O", "U", "L", "N", "R", "S", "T",
-    2 points: "D", "G",
-    3 points: "B", "C", "M", "P",
-    4 points: "F", "H", "V", "W", "Y",
-    5 points: "K",
-    8 points: "J", "X",
-    10 points: "Q", "Z",
-*/
-/*
-"a" is worth 1 point.
-"b" is worth 3 points.
-"c" is worth 3 points.
-"d" is worth 2 points.
-*/
