@@ -18,3 +18,8 @@ C and Python exercises from Exercism.
 ### rna-transcription
 * strings iteration
 * dynamic allocation
+
+## darts
+* vector magnitude
+* sqrt
+* coordinate struct

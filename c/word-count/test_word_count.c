@@ -86,7 +86,7 @@ static void test_count_one_of_each_word(void)
 
 static void test_multiple_occurrences_of_a_word(void)
 {
-   TEST_IGNORE();
+   //TEST_IGNORE();
    int index = 0;
    int actual_word_count;
    char *input_text = "one fish two fish red fish blue fish";
@@ -119,7 +119,6 @@ static void test_multiple_occurrences_of_a_word(void)
 
 static void test_handles_cramped_lists(void)
 {
-   TEST_IGNORE();
    int index = 0;
    int actual_word_count;
    char *input_text = "one,two,three";
