@@ -33,3 +33,10 @@ C and Python exercises from Exercism.
 ### two-fer
 * sprintf (stdio.h)
 * ternary operator
+
+### secret-handshake
+* decimal to binary conversion
+* pointer to pointer
+* string initialization
+* dynamic allocation
+* reversing functionality
