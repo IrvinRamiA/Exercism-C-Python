@@ -43,3 +43,8 @@ C and Python exercises from Exercism.
 
 ### collatz-conjecture
 * loops
+
+### word-count
+* tokens with strtok
+* strncmp
+* strncpy
