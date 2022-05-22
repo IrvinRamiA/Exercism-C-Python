@@ -1,7 +1,6 @@
 #include "word_count.h"
 #include <string.h>
 #include <stdlib.h>
-#include <stdio.h>
 #include <ctype.h>
 
 int count_words(const char *sentence, word_count_word_t *words)
