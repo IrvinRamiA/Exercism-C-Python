@@ -40,3 +40,6 @@ C and Python exercises from Exercism.
 * string initialization
 * dynamic allocation
 * reversing functionality
+
+### collatz-conjecture
+* loops
