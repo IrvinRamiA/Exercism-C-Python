@@ -48,3 +48,8 @@ C and Python exercises from Exercism.
 * tokens with strtok
 * strncmp
 * strncpy
+
+### robot-simulator
+* strings iteration
+* coordinates
+* enums
