@@ -54,6 +54,6 @@ C and Python exercises from Exercism.
 * coordinates
 * enums
 
-## anagram
+### anagram
 * characters sorting in strings
 * strings comparison
