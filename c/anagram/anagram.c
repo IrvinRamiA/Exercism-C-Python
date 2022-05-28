@@ -3,33 +3,33 @@
 #include <ctype.h>
 #include <stdio.h>
 
-void find_anagrams(const char *subject, struct candidates *candidates)
+static void convert_string_to_lower_case(char *sentence)
+{
+    for (unsigned char i = 0; i < strlen(sentence); i++)
+    {
+        *(sentence + i) = tolower(*(sentence + i));
+    }
+}
+
+void find_anagrams(char *subject, struct candidates *candidates)
 {
     unsigned char coincidences_counter = 0u;
     unsigned char subject_length = strlen(subject);
 
+    convert_string_to_lower_case(subject);
+
     for (unsigned char i = 0u; i < candidates->count; i++)
     {
-        printf("Candidate: %d\n", i);
-        printf("Candidate: %s\n", candidates->candidate[i].word);
-        printf("Candidate length = %d\n", strlen(candidates->candidate[i].word));
-        printf("Subject length = %d\n", subject_length);
-        if (subject_length == strlen(candidates->candidate[i].word))
+        convert_string_to_lower_case(candidates->candidate[i].word);
+        if (subject_length == strlen(candidates->candidate[i].word) &&
+            strncmp(subject, candidates->candidate[i].word, subject_length) != 0u)
         {
-            printf("Inside if\n");
             while (*subject != '\0')
             {
                 for (unsigned char j = 0u; j < strlen(candidates->candidate[i].word); j++)
                 {
-                    // printf("*subject = %c\n", *subject);
-                    // printf("word[j] = %c\n", candidates->candidate[i].word[j]);
-                    if (tolower(*subject) == tolower(candidates->candidate[i].word[j]))
+                    if (*subject == candidates->candidate[i].word[j])
                     {
-                        // printf("-- TESTING - START --\n");
-                        printf("subject char: %c\n", *subject);
-                        printf("candidate char: %c\n", candidates->candidate[i].word[j]);
-                        printf("COINCIDENCE j = %d\n", j);
-                        // printf("-- TESTING - END --\n");
                         coincidences_counter++;
                         break;
                     }
@@ -39,11 +39,8 @@ void find_anagrams(const char *subject, struct candidates *candidates)
             subject -= subject_length;
         }
 
-        printf("subject_length = %d\n", subject_length);
-        printf("coincidences_counter = %d\n", coincidences_counter);
         if (coincidences_counter == subject_length)
         {
-            printf("%s is anagram\n", candidates->candidate[i].word);
             candidates->candidate[i].is_anagram = IS_ANAGRAM;
         }
         else

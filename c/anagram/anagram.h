@@ -13,7 +13,7 @@ enum anagram_status {
 
 struct candidate {
    enum anagram_status is_anagram;
-   const char *word;
+   char *word;
 };
 
 struct candidates {
@@ -25,6 +25,6 @@ struct candidates {
  * @description - determines if any of the words in candidate are anagrams
  *                for subject. Contents of candidate structures may be modified.
  */
-void find_anagrams(const char *subject, struct candidates *candidates);
+void find_anagrams( char *subject, struct candidates *candidates);
 
 #endif

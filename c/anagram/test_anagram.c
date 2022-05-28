@@ -235,7 +235,6 @@ test_does_not_detect_an_anagram_if_the_original_word_is_repeated(void)
 
 static void test_anagrams_must_use_all_letters_exactly_once(void)
 {
-   TEST_IGNORE();
    char inputs[][MAX_STR_LEN] = {
       "patter"
    };
@@ -251,7 +250,6 @@ static void test_anagrams_must_use_all_letters_exactly_once(void)
 
 static void test_words_are_not_anagrams_of_themselves(void)
 {
-   TEST_IGNORE();
    char inputs[][MAX_STR_LEN] = {
       "BANANA",
       "Banana",
@@ -269,7 +267,6 @@ static void test_words_are_not_anagrams_of_themselves(void)
 
 static void test_words_other_than_themselves_can_be_anagrams(void)
 {
-   TEST_IGNORE();
    char inputs[][MAX_STR_LEN] = {
       "Listen",
       "Silent",
