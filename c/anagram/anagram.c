@@ -2,6 +2,7 @@
 #include <string.h>
 #include <ctype.h>
 #include <stdlib.h>
+
 static int comparator(const void *char_a, const void *char_b)
 {
     return *((char *)char_a) - *((char *)char_b);
