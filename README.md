@@ -53,3 +53,7 @@ C and Python exercises from Exercism.
 * strings iteration
 * coordinates
 * enums
+
+## anagram
+* characters sorting in strings
+* strings comparison
