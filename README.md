@@ -62,3 +62,6 @@ C and Python exercises from Exercism.
 * double pointers for matrix
 * null terminated strings
 * conditions to fill matrix
+
+### queen-attack
+* check if objects are in same row, column or diagonal
