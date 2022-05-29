@@ -65,3 +65,6 @@ C and Python exercises from Exercism.
 
 ### queen-attack
 * check if objects are in same row, column or diagonal
+
+### perfect-numbers
+* basic conditionals
