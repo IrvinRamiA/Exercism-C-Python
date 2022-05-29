@@ -57,3 +57,8 @@ C and Python exercises from Exercism.
 ### anagram
 * characters sorting in strings
 * strings comparison
+
+### diamond
+* double pointers for matrix
+* null terminated strings
+* conditions to fill matrix
