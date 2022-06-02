@@ -68,3 +68,6 @@ C and Python exercises from Exercism.
 
 ### perfect-numbers
 * basic conditionals
+
+### all-your-base
+* Number conversion to different base
