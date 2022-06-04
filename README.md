@@ -71,3 +71,4 @@ C and Python exercises from Exercism.
 
 ### all-your-base
 * Number conversion to different base
+* pow and round functions

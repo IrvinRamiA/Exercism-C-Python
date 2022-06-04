@@ -90,7 +90,6 @@ static void test_hexadecimal_to_trinary(void)
 
 static void test_15_bit_integer(void)
 {
-    TEST_IGNORE();
     int8_t input[] = {3, 46, 60};
     int8_t expected[] = {6, 10, 45};
     check_rebase(97, input, LENGTH(input), 73, expected, LENGTH(expected));
@@ -98,14 +97,12 @@ static void test_15_bit_integer(void)
 
 static void test_empty_list(void)
 {
-    TEST_IGNORE();
     int8_t input[DIGITS_ARRAY_SIZE] = {0};
     TEST_ASSERT_EQUAL_size_t(0, rebase(input, 2, 10, 0));
 }
 
 static void test_single_zero(void)
 {
-    TEST_IGNORE();
     int8_t input[] = {0};
     int8_t expected[] = {0};
     check_rebase(2, input, LENGTH(input), 10, expected, 0);
@@ -113,7 +110,6 @@ static void test_single_zero(void)
 
 static void test_multiple_zeros(void)
 {
-    TEST_IGNORE();
     int8_t input[] = {0, 0, 0};
     int8_t expected[] = {0};
     check_rebase(10, input, LENGTH(input), 2, expected, 0);
@@ -121,7 +117,6 @@ static void test_multiple_zeros(void)
 
 static void test_leading_zeros(void)
 {
-    TEST_IGNORE();
     int8_t input[] = {0, 6, 0};
     int8_t expected[] = {4, 2};
     check_rebase(7, input, LENGTH(input), 10, expected, LENGTH(expected));
@@ -129,7 +124,6 @@ static void test_leading_zeros(void)
 
 static void test_input_base_is_one(void)
 {
-    TEST_IGNORE();
     int8_t input[] = {0};
     int8_t expected[] = {0};
     check_rebase(1, input, LENGTH(input), 10, expected, 0);
@@ -137,7 +131,6 @@ static void test_input_base_is_one(void)
 
 static void test_input_base_is_zero(void)
 {
-    TEST_IGNORE();
     int8_t input[] = {0};
     int8_t expected[] = {0};
     check_rebase(0, input, LENGTH(input), 10, expected, 0);
@@ -145,7 +138,6 @@ static void test_input_base_is_zero(void)
 
 static void test_input_base_is_negative(void)
 {
-    TEST_IGNORE();
     int8_t input[] = {1};
     int8_t expected[] = {0};
     check_rebase(-2, input, LENGTH(input), 10, expected, 0);
@@ -153,7 +145,6 @@ static void test_input_base_is_negative(void)
 
 static void test_negative_digit(void)
 {
-    TEST_IGNORE();
     int8_t input[] = {1, -1, 1, 0, 1, 0};
     int8_t expected[] = {0};
     check_rebase(2, input, LENGTH(input), 10, expected, 0);
@@ -161,7 +152,6 @@ static void test_negative_digit(void)
 
 static void test_invalid_positive_digit(void)
 {
-    TEST_IGNORE();
     int8_t input[] = {1, 2, 1, 0, 1, 0};
     int8_t expected[] = {0};
     check_rebase(2, input, LENGTH(input), 10, expected, 0);
@@ -169,7 +159,6 @@ static void test_invalid_positive_digit(void)
 
 static void test_output_base_is_one(void)
 {
-    TEST_IGNORE();
     int8_t input[] = {1, 0, 1, 0, 1, 0};
     int8_t expected[] = {0};
     check_rebase(2, input, LENGTH(input), 1, expected, 0);
@@ -177,7 +166,6 @@ static void test_output_base_is_one(void)
 
 static void test_output_base_is_zero(void)
 {
-    TEST_IGNORE();
     int8_t input[] = {7};
     int8_t expected[] = {0};
     check_rebase(10, input, LENGTH(input), 0, expected, 0);
@@ -185,7 +173,6 @@ static void test_output_base_is_zero(void)
 
 static void test_output_base_is_negative(void)
 {
-    TEST_IGNORE();
     int8_t input[] = {1};
     int8_t expected[] = {0};
     check_rebase(2, input, LENGTH(input), -7, expected, 0);
@@ -193,7 +180,6 @@ static void test_output_base_is_negative(void)
 
 static void test_both_bases_are_negative(void)
 {
-    TEST_IGNORE();
     int8_t input[] = {1};
     int8_t expected[] = {0};
     check_rebase(-2, input, LENGTH(input), -7, expected, 0);
