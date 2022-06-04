@@ -86,3 +86,7 @@ C and Python exercises from Exercism.
 
 ### allergies
 * shift bitwise operation
+
+### saddle-points
+* matrix
+* memcpy function
