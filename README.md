@@ -80,3 +80,7 @@ C and Python exercises from Exercism.
 
 ### nth-prime
 * is_prime algorithm optimized
+
+### phone-number
+* null terminated strings
+* removing characters from strings
