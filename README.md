@@ -77,3 +77,6 @@ C and Python exercises from Exercism.
 * Matrix with pointer to pointer
 * Iterating around certain position
 * NULL terminated strings
+
+### nth-prime
+* is_prime algorithm optimized
