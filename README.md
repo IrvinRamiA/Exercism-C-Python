@@ -83,3 +83,6 @@ C and Python exercises from Exercism.
 
 ### scrabble-score
 * null terminated strings
+
+### allergies
+* shift bitwise operation
