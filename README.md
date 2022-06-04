@@ -80,3 +80,6 @@ C and Python exercises from Exercism.
 ### phone-number
 * null terminated strings
 * removing characters from strings
+
+### scrabble-score
+* null terminated strings
