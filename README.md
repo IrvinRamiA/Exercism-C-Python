@@ -90,3 +90,9 @@ C and Python exercises from Exercism.
 ### saddle-points
 * matrix
 * memcpy function
+
+### series
+* dynamic memory allocation
+* pointer to pointer
+* strncpy function
+* null terminated strings
