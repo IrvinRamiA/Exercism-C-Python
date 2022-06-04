@@ -72,3 +72,8 @@ C and Python exercises from Exercism.
 ### all-your-base
 * Number conversion to different base
 * pow and round functions
+
+### minesweeper
+* Matrix with pointer to pointer
+* Iterating around certain position
+* NULL terminated strings
