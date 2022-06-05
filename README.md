@@ -135,3 +135,7 @@ C and Python exercises from Exercism.
 - foldr_list
 - reverse_list
 - delete_list
+
+### roman-numerals
+* strings
+* append to strings (strncat)
