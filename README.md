@@ -96,3 +96,7 @@ C and Python exercises from Exercism.
 * pointer to pointer
 * strncpy function
 * null terminated strings
+
+### matching-brackets
+* string iteration
+* flags
